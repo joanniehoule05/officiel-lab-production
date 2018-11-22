@@ -1,0 +1,1 @@
+web: java -Dport=$7222 -Dpromo=true -Dstore=memory -jar target/application-name-1.0.0-SNAPSHOT.jar

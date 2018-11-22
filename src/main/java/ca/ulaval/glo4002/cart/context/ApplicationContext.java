@@ -7,6 +7,7 @@ public class ApplicationContext {
     public static final String MODE_PARAMETER = "mode";
 
     public void apply() {
+    	
         if (hasParameterValue(STORE_PARAMETER, "xml")) {
             new XmlPersistenceContext().apply();
         } else if (hasParameterValue(STORE_PARAMETER, "hibernate")) {
