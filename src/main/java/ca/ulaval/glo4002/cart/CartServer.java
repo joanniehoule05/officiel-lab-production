@@ -21,11 +21,14 @@ import org.glassfish.jersey.servlet.ServletContainer;
 
 public class CartServer implements Runnable {
     //private static final int PORT = 7222;
+	private static String strPort;
+	private static int PORT;
     
-	private String strPort = System.getProperty("Dport","7222");
-	private int PORT = Integer.parseInt(strPort);
+
 
     public static void main(String[] args) {
+    	strPort = System.getProperty("port","7222");
+    	PORT = Integer.parseInt(strPort);
         new CartServer().run();
     }
 
